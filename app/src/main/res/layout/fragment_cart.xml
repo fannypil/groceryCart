@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CartFragment">
+    <LinearLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/connectedUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/oswald"
+            android:gravity="left"
+            android:padding="8dp"
+            android:paddingStart="7dp"
+            android:text="user"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerViewCart"
+        android:scrollbars="vertical"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonAddToCart"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="40dp"
+        android:src="@drawable/baseline_add_circle_outline_24"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+
+      />
+    <ImageButton
+        android:id="@+id/imageButtonLogOut"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="40dp"
+        android:src="@drawable/baseline_logout_24"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

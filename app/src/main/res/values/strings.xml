@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">groceryCart</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="spinner_items">
+        <item>Milk</item>
+        <item>Bread</item>
+        <item>Eggs</item>
+        <item>Flower</item>
+        <item>Sugar</item>
+        <item>Salt</item>
+        <item>Water</item>
+        <item>Juice</item>
+        <item>Pasta</item>
+
+
+    </string-array>
+</resources>

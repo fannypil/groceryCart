@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".fragments.RegisterFragment" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        android:padding="8dp"
+        android:src="@drawable/baseline_app_registration_24" />
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/oswald"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@color/light_sky_blue"
+        android:textSize="60sp" />
+    <EditText
+        android:id="@+id/editTextEmailRegFrag"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:hint="Enter Email address"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="8dp"
+        android:background="@drawable/edittext_bkg"
+        android:inputType="text|textEmailAddress"
+        android:padding="8dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextPasswordRegFrag"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/baseline_key_24"
+        android:drawablePadding="8dp"
+        android:background="@drawable/edittext_bkg"/>
+
+    <EditText
+        android:id="@+id/editTextRePasswordRegFrag"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Password again"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/baseline_key_24"
+        android:drawablePadding="8dp"
+        android:background="@drawable/edittext_bkg"
+        android:padding="8dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:hint="Enter Phone Number"
+        android:textSize="20sp"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/baseline_local_phone_24"
+        android:drawablePadding="8dp"
+        android:background="@drawable/edittext_bkg"/>
+
+    <Button
+        android:id="@+id/buttonRegisterRegFrag"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnborder"
+        android:fontFamily="@font/montserrat"
+        android:text="Register"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonBackToLogin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/montserrat"
+        android:text="Back to login"
+        android:textColor="@color/light_sky_blue"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</LinearLayout>
