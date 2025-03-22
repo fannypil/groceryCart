@@ -126,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
         String email=((EditText) findViewById(R.id.editTextEmailRegFrag)).getText().toString();
         String phone=((EditText) findViewById(R.id.editTextPhone)).getText().toString();
 
+
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("users").child(email.split("@")[0]);
 
@@ -183,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
             }).addOnFailureListener(e -> {
                 // Handle database failure
                 showFailedAlertDialog("","Failed to update product:"+ e.getMessage());
+
             });
         }catch (NumberFormatException e){
             // Handle invalid quantity format
