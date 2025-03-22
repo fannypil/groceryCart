@@ -29,7 +29,7 @@ Grocery Cart is an Android application that allows users to manage their grocery
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/fannypil/groceryCart
+   git clone https://github.com/fannypil/groceryCart.git
    ```
 2. Open the project in Android Studio.
 3. Add your `google-services.json` file to the `app` directory.
